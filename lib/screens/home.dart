@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:wordy/components/GradientButton.dart';
 import 'package:wordy/screens/language.dart';
+import 'package:wordy/components/LanguageTile.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -11,10 +12,8 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: Center(child: Column(
         children: [
-          Hero(
-            tag: 'GaelicHero',
-            child: Image.network('https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/1200px-Flag_of_Scotland.svg.png')
-          ),
+          const LanguageTile("Gaelic"),
+          const LanguageTile("French"),
           gradientButtonFactory("Open", () {
             Navigator.push(context, MaterialPageRoute(builder: (context) => const LanguageScreen("Gaelic")));
           })

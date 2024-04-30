@@ -14,10 +14,15 @@ class LanguageScreen extends StatelessWidget {
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(gradient: BACKGROUND_GRADIENT),
-        child: Hero(
-          tag: '${language}Hero',
-          child: Image.network('https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/1200px-Flag_of_Scotland.svg.png')
-        ),
+        child: Column(
+          children: [
+            Hero(
+              tag: '${language}Hero',
+              child: Image.network('https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/1200px-Flag_of_Scotland.svg.png')
+            ),
+            Text(language)
+          ]
+        )
       )
     );
   }
