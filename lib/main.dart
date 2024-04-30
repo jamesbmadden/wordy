@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wordy/screens/welcome.dart';
+import 'package:wordy/view/screens/welcome.dart';
 
 void main() {
   runApp(const WordyApp());

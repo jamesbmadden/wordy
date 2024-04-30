@@ -1,7 +1,7 @@
 /// "wordy" in 5 languages for a fun effect
 import 'package:flutter/material.dart';
-import 'package:wordy/components/GradientText.dart';
-import 'package:wordy/constants/colours.dart';
+import 'package:wordy/view/components/GradientText.dart';
+import 'package:wordy/view/constants/colours.dart';
 
 class AppTitle extends StatelessWidget {
   const AppTitle({super.key, required this.big});

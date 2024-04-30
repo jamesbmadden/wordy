@@ -1,8 +1,9 @@
 /// root of the app. navigate to different language pages, add a new one, or quick add a word
 import 'package:flutter/material.dart';
-import 'package:wordy/components/GradientButton.dart';
-import 'package:wordy/screens/language.dart';
-import 'package:wordy/components/LanguageTile.dart';
+import 'package:wordy/view/components/GradientButton.dart';
+import 'package:wordy/view/screens/language.dart';
+import 'package:wordy/view/components/Title.dart';
+import 'package:wordy/view/components/LanguageTile.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -12,6 +13,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: Center(child: Column(
         children: [
+          const AppTitle(big: false),
           const LanguageTile("Gaelic"),
           const LanguageTile("French"),
           gradientButtonFactory("Open", () {

@@ -1,8 +1,6 @@
 /// open up the details view of the language
 import 'package:flutter/material.dart';
-import 'package:wordy/components/GradientButton.dart';
-import 'package:wordy/constants/colours.dart';
-import 'package:wordy/screens/home.dart';
+import 'package:wordy/view/constants/colours.dart';
 
 class LanguageScreen extends StatelessWidget {
   const LanguageScreen(this.language, {super.key});

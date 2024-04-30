@@ -1,9 +1,9 @@
 /// First page upon opening the app. Shows large title and explains the app
 import 'package:flutter/material.dart';
-import 'package:wordy/components/GradientButton.dart';
-import 'package:wordy/constants/colours.dart';
-import 'package:wordy/screens/home.dart';
-import 'package:wordy/components/Title.dart';
+import 'package:wordy/view/components/GradientButton.dart';
+import 'package:wordy/view/constants/colours.dart';
+import 'package:wordy/view/screens/home.dart';
+import 'package:wordy/view/components/Title.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});

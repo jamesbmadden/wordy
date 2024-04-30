@@ -1,6 +1,6 @@
 /// generates a gradient filled button following the app's styles
 import 'package:flutter/material.dart';
-import 'package:wordy/constants/colours.dart';
+import 'package:wordy/view/constants/colours.dart';
 
 FilledButton gradientButtonFactory(String label, void Function()? onPressed) {
   return FilledButton(
